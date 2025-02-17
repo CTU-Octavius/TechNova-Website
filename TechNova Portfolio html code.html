@@ -129,7 +129,20 @@ footer {
             </div>
         </div>
     </section>
-    
+
+     <script>
+
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').split(".")[0]; 
+        document.getElementById(targetId)?.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+    </script>
     <footer>
         <p>&copy; 2025 TechNova. All rights reserved.</p>
 
