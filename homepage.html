@@ -3,146 +3,138 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Home page </title>
-</head>
-<style>
-    body {
-     background-color: gray;
-     font-family: Arial, sans-serif;
-     margin: 0;
-     padding: 0;
- }
- 
- /* Navbar styling */
- header nav {
-     background-color: #333;
-     padding: 10px 0;
- }
- 
- header nav ul {
-     list-style-type: none;
-     display: flex;
-     justify-content: center;
-     margin: 0;
-     padding: 0;
- }
- 
- header nav ul li {
-     margin: 0 20px;
- }
- 
- header nav ul li a {
-     color: white;
-     text-decoration: none;
-     font-size: 18px;
-     padding: 10px 20px;
-     display: block;
- }
- 
- header nav ul li a:hover {
-     background-color: #575757;
-     border-radius: 5px;
- }
- 
- /* Portfolio section styling */
- #portfolio {
-     text-align: center;
-     padding: 50px 0;
-     background-color: #f4f4f4;
- }
- 
- #portfolio h1 {
-     font-size: 2.5em;
-     margin-bottom: 30px;
- }
- 
- .portfolio-grid {
-     display: grid;
-     grid-template-columns: repeat(3, 1fr);
-     gap: 20px;
-     padding: 0 20px;
- }
- 
- .portfolio-item {
-     background-color: white;
-     padding: 20px;
-     border-radius: 8px;
-     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-     text-align: center;
- }
- 
- .portfolio-item img {
-     width: 100%;
-     height: auto;
-     border-radius: 8px;
- }
- 
- .portfolio-item h3 {
-     margin-top: 15px;
-     font-size: 1.5em;
- }
- 
- .portfolio-item p {
-     font-size: 1em;
-     color: #555;
- }
- 
- /* Footer styling */
- footer {
-     background-color: #333;
-     color: white;
-     text-align: center;
-     padding: 20px;
- }
- </style>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: gray;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-<h1>Welcome to Tech Nova </h1>
-<nav>
-<a href="about.html">About </a>
-<a href="Services.html">Services </a>
-<a href="Portfolio.html">portfolio </a>
-<a href="Blog.html">Blog </a>
-<a href="contact.html">Contact </a>
-</nav>
-<br>
- 
- 
+        /* Navbar styling */
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        /* Centering the main content */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 26px;
+            color: #333;
+            margin-top: 30px;
+        }
+
+        p, ul {
+            font-size: 18px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        ul {
+            text-align: left;
+            display: inline-block;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: white;
+        }
+    </style>
+</head>
 <body>
- 
-<p><h3>Innovate. Elevate. Transform.</h3>
- 
-At TechNova, we craft cutting-edge web and app solutions that redefine digital experiences. Whether you're a startup or an enterprise, we bring innovation, efficiency, and seamless user experiences to every project.</p>
- 
-    <p> <h3>Our Expertise</h3>
-    <ul>
-        <li>Web & App Development – Scalable, responsive, and high-performance digital products.</li>
-        <li>UI/UX Design – Intuitive interfaces that enhance user engagement.</li>
-        <li>Data-Driven Solutions – Smart dashboards and analytics for informed decisions</li>
- 
-    </ul>
-    </p>
- 
-    <p>
-   
-    <h3>Why Choose TechNova?</h3>
-       
-    <ul>
-       
-        <li>User-Centric Approach – Every project is designed with the end user in mind.</li>
-        <li>Cutting-Edge Technology – We leverage the latest tools to drive results.</li>
-        <li>Tailored Solutions – Your vision, our innovation.</li>
-   
-    </ul>
- 
-        Let’s Build Something Amazing!
-        Get in touch today and take your business to the next level.    
- 
- 
-    </p>
- 
- 
- 
-<p> </p>
- 
+
+    <header>
+        <h1>Welcome to Tech Nova</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+        <h3>Innovate. Elevate. Transform.</h3>
+        <p>
+            At TechNova, we craft cutting-edge web and app solutions that redefine digital experiences. 
+            Whether you're a startup or an enterprise, we bring innovation, efficiency, and seamless user 
+            experiences to every project.
+        </p>
+
+        <h3>Our Expertise</h3>
+        <ul>
+            <li><b>Web & App Development</b> – Scalable, responsive, and high-performance digital products.</li>
+            <li><b>UI/UX Design</b> – Intuitive interfaces that enhance user engagement.</li>
+            <li><b>Data-Driven Solutions</b> – Smart dashboards and analytics for informed decisions.</li>
+        </ul>
+
+        <h3>Why Choose TechNova?</h3>
+        <ul>     
+            <li><b>User-Centric Approach</b> – Every project is designed with the end user in mind.</li>
+            <li><b>Cutting-Edge Technology</b> – We leverage the latest tools to drive results.</li>
+            <li><b>Tailored Solutions</b> – Your vision, our innovation.</li>
+        </ul>
+
+        <p>
+            Let’s Build Something Amazing! <br>
+            <b>Get in touch today and take your business to the next level.</b>    
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TechNova. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
